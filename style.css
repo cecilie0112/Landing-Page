@@ -8,14 +8,20 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header, ul, .hero-cont, .rand, .info, .quote, .action, .action .container, .action .left, .action .right{
+.header, .hero, ul, .hero-cont, .middle,.rand, .info, .quote, .action, .action .container, .action .left, .action .right, .footer{
     display: flex;
 }
 
 /* HERO SECTION */
 .hero {
-    padding: 0px 270px 70px 270px;
     background-color: #1F2937;
+    justify-content: center;
+    padding-bottom: 125px;
+}
+
+.hero .middle {
+    width: 1000px;
+    flex-direction: column;
 }
 
 .header {
@@ -198,4 +204,14 @@ p {
     font-size: 18px;
     border-radius: 10px;
     font-weight: bold;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #1F2937;
+    height: 100px;
+    color: #c9c9c9;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
 }
