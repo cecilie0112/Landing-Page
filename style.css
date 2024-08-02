@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.header, ul, .hero-cont, .rand, .info, .quote{
+.header, ul, .hero-cont, .rand, .info, .quote, .action, .action .container, .action .left, .action .right{
     display: flex;
 }
 
@@ -35,13 +35,14 @@ body {
 ul {
     list-style-type: none;
     padding: 0px;
-    gap: 20px;
+    gap: 26px;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB
+    color: #E5E7EB;
+    opacity: 0.7;
 }
 
 p, ul {
@@ -70,7 +71,7 @@ p {
     margin-bottom: 10px;
 }
 
-button {
+.hero-cont button {
     color: #F9FAF8;
     background-color: #3882F6;
     border: 0px;
@@ -92,7 +93,7 @@ button {
     margin-bottom: 90px;
 }
 
-h2 {
+.rand-head h2 {
     text-align: center;
     margin: 30px;
     font-size: 36px;
@@ -149,5 +150,52 @@ h2 {
 .quote p {
     text-align: right;
     font-size: 23px;
+    font-weight: bold;
+}
+
+/* ACTION SECTION */
+.action {
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action .container {
+    gap: 160px;
+}
+
+.action h2, .action p{
+    margin: 0;
+    color: #F9FAF8;
+}
+
+.action p {
+    opacity: 0.7;
+    font-size: 17px;
+}
+
+.action .left {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action .right {
+    align-items: center;
+}
+
+.action .container {
+    background-color: #3882F6;
+    border-radius: 15px;
+    width: 1000px;
+    height: 150px;
+}
+
+.action button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    padding: 8px 35px;
+    font-size: 18px;
+    border-radius: 10px;
     font-weight: bold;
 }
